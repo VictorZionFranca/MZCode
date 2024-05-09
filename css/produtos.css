@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+
+html, body {
+    font-family: Teachers;
+    margin: 0;
+    padding: 0;
+}
+
+/* Começo do Header */
+
+header {
+    background: linear-gradient(90deg, rgba(46,100,107,.1) 23%, rgba(5,74,72,.1) 47%, rgba(5,74,72,.1) 75%);
+    width: 100%;
+    height: 80px;
+}
+.menu-static {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(90deg, rgba(46,100,107,.95) 23%, rgba(5,74,72,.95) 47%, rgba(5,74,72,.95) 75%);
+    z-index: 2;
+}
+.logo {
+    margin: 0 0 0 60px;
+}
+#logo {
+    height: 85px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 370px;
+}
+.menu ul {
+    display: flex;
+    text-decoration: none;
+}
+.menu ul li {
+    padding-right: 42px;
+    list-style-type: none;
+    text-decoration: none;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.menu a:hover {
+    color: rgba(0, 0, 0, .6);
+}
+
+/* Fim do Header */
+/* Começo do Main */
+
+main {
+    background-size: cover;
+    height: 1500px;
+    position: relative;
+    top: -21px;
+}
+.titulo {
+    margin: 0 auto;
+    height: 200px;
+}
+.titulo h1 {
+    text-align:  center;
+    padding: 60px 20px 30px;
+    
+}
+.img {
+    width: 1200px;
+    height: 475px;
+    display: flex;
+    border: 1px solid rgb(192, 173, 173);
+    margin: 0 auto;
+    border-radius: 50px;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+}
+.img .img-frase{
+    position: relative;
+    width: 400px;
+    font-size: 40px;
+    top: 100px;
+    height: 375px;
+}
+.img .img-frase p:last-child{
+    font-size: 30px;
+}
+
+.img .img-estacionamento img {
+    top: 70px;
+    right: 70px;
+    width: 113%;
+    height: 70%;
+    position: relative;
+    border-radius: 50px;
+}
+.fundo-img {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(90deg, rgba(46,100,107,.95) 23%, rgba(5,74,72,.95) 47%, rgba(5,74,72,.95) 75%);
+    bottom: 245px;
+    position: relative;
+}
+
+/* Fim do Main */
