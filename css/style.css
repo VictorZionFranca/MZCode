@@ -4,6 +4,7 @@ html, body {
     font-family: Teachers;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Começo do Header */
@@ -122,5 +123,26 @@ header {
 .primeiro_icone i {
     font-size: 60px;
 }
+/* Começo transições */
 
+.hidden {
+    opacity: 0;
+    filter: blur(2px);
+    transition: all 0s;
+    transform: translateX(-100%);
+}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1s;
+    transform: translateX(0);
+}
+.icones :nth-child(2) {
+    transition-delay: 1s;
+}
+.icones :nth-child(3) {
+    transition-delay: 1.6s;
+}
+
+/* Fim transições */
 /* Fim do Main */
