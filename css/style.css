@@ -95,7 +95,7 @@ header {
 }
 .fundo a:hover {
     background: #fffffff2;
-    color: rgba(5, 74, 72, 1) ;
+    color: rgba(5, 74, 72, 1);
 }
 .icones{ 
     width: 100%;
@@ -145,4 +145,20 @@ header {
 }
 
 /* Fim transições */
+
+.frases {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    margin:auto;
+}
+.frases h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+.frases p {
+ font-size: 23px;
+}
+
 /* Fim do Main */
