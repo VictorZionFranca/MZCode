@@ -104,7 +104,7 @@ header {
 }
 .primeiro_icone {
     width: 380px;
-    background: linear-gradient(90deg, rgba(5, 74, 72, 1) 23%, rgba(5, 74, 72, 1) 47%, rgba(5, 74, 72, 1) 75%);;
+    background: linear-gradient(90deg, rgba(5, 74, 72, 1) 23%, rgba(5, 74, 72, 1) 47%, rgba(5, 74, 72, 1) 75%);
     display: flex;
     flex-direction: column;
     position: relative;
@@ -152,6 +152,7 @@ header {
     flex-direction: column;
     width: 750px;
     margin:auto;
+    height: 350px;
 }
 .frases h1 {
     font-size: 40px;
@@ -162,3 +163,45 @@ header {
 }
 
 /* Fim do Main */
+/* Começo do footer */
+
+.footer-fundo {
+    width: 100%;
+    height: 325px;
+    background: linear-gradient(90deg, rgb(5, 74, 72) 23%, rgba(5, 74, 72, 1) 47%, rgba(5, 74, 72, 1) 75%);
+    margin-top: 50px;
+    display: flex;
+}
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+}
+.footer-fundo img {
+    width: 240px;
+    margin: 20px 0 0 10px;
+}
+.footer-fundo ul {
+    display: flex;
+    flex-direction: column;
+}
+.footer-fundo a {
+    color: white;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+.footer-copyright {
+    width: 100%;
+    height: 75px;
+    background: rgb(0, 50, 48);
+    margin: 0;
+}
+.footer-copyright p {
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    padding-top: 28px;
+    color: white;
+    font-size: 16px;
+}
+
+/* Fim do footer */
