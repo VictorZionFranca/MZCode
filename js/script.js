@@ -14,3 +14,12 @@ const elements = document.querySelectorAll('.hidden')
 
 elements.forEach( (element) => myObserver.observe(element) )
 
+// Código para deixar o background do menu visivel no scroll
+
+const menu = document.querySelector('.menu-static')
+
+function activeScroll(){
+    menu.classList.toggle('menu-static-ativo', scrollY > 130)
+}
+
+window.addEventListener('scroll', activeScroll)

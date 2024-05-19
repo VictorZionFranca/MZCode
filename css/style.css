@@ -10,22 +10,27 @@ html, body {
 /* Começo do Header */
 
 header {
-    background: rgb(46,100,107);
-    background: linear-gradient(90deg, rgba(46,100,107,1) 23%, rgba(5,74,72,1) 47%, rgba(5,74,72,1) 75%);
     width: 100%;
     height: 80px;
     display: flex;
     justify-content: space-between;
 }
 .menu-static {
+    background:transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
     height: 80px;
-    background: linear-gradient(90deg, rgba(46,100,107,.95) 23%, rgba(5,74,72,.95) 47%, rgba(5,74,72,.95) 75%);
-    z-index: 2;
+    z-index: 4;
+    transition: all ease .8s;
+}
+.menu-static-ativo {
+    transition: all ease .8s;
+    background: rgba(5,74,72,.95) ;
+    z-index: 4;
+    backdrop-filter: blur(2px);
 }
 .logo {
     margin: 0 0 0 60px;
@@ -53,8 +58,12 @@ header {
     color: white;
     font-size: 20px;
 }
-.menu a:hover {
-    color: rgba(0, 0, 0, .6);
+.menu-static a:hover {
+    color: rgba(5,74,72,1);
+}
+
+.menu-static-ativo a:hover {
+    color: rgba(0, 0, 0, .8);
 }
 
 /* Fim do Header */
@@ -65,8 +74,10 @@ header {
 
 .fundo img {
     width: 100%;
-    height: 700px;
+    height: 760px;
     filter: brightness(0.25);
+    position: relative;
+    bottom: 80px;
 }
 .fundo h1 {
     position: relative;
