@@ -112,6 +112,7 @@ header {
     width: 100%;
     height: 500px;
     display: flex;
+    justify-content: center;
 }
 .primeiro_icone {
     width: 380px;
