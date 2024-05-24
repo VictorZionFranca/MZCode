@@ -78,6 +78,7 @@ header {
     filter: brightness(0.25);
     position: relative;
     bottom: 80px;
+    box-shadow: 0px 25px 60px 10px rgba(0,0,0,0.75);
 }
 .fundo h1 {
     position: relative;
@@ -103,10 +104,15 @@ header {
     text-align: center;
     align-content: center;
     border-radius: 100px;
+    border-color: rgba(5, 74, 72, 1);
+    border: rgba(5, 74, 72, 1) 1px solid;
+    transition: .6s ease-in;
+    
 }
 .fundo a:hover {
-    background: #fffffff2;
+    background: transparent;
     color: rgba(5, 74, 72, 1);
+    transition: .3s ease-out;
 }
 .icones{ 
     width: 100%;
@@ -128,6 +134,7 @@ header {
     border-radius: 50px;
     font-size: 22px;
     box-shadow: 0px 0px 15px 0px rgba(5, 74, 72, 1);
+    transition: 1s;
 }
 .primeiro_icone span {
     font-weight: bolder;
