@@ -217,8 +217,8 @@ header {
 .footer-links {
     border-left: 1px solid rgb(0, 50, 48);
     padding: 0 0 0 20px;
-    height: 280px;
-    margin-top: 20px;
+    height: 255px;
+    margin-top: 30px;
     display: flex;
 }
 .footer-bordas {
