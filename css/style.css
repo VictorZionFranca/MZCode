@@ -183,9 +183,76 @@ header {
 .frases p {
  font-size: 23px;
 }
+.saiba-mais {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 120px;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    background-color: #b7b8b87d;
+    border-radius: 20px;
+    box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+.card:hover {
+    height: 400px;
+}
+.card .img-box {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    top: 0px;
+    transition: 0.5s;
+}
+.card:hover .img-box {
+    top: -100px;
+    scale: 0.75;
+}
+.card .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: relative;
+    top: 175px;
+    width: 100%;
+    padding: 0px 18px;
+    text-align: center;
+    height: 100px;
+    overflow: hidden;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.card:hover .content {
+    top: 35px;
+    height: 390px;
+}
+.card .read-more {
+    background-color: rgba(5, 74, 72, 1);
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 1px solid rgba(5, 74, 72, 1);
+    transition: 0.5s;
+}
+.card .read-more:hover {
+    background-color: transparent;
+    color: rgba(5, 74, 72, 1);
+}
 .frases-empresa {
     height: 600px;
-    margin-top: 200px;
+    margin-top: 530px;
 }
 .frases-empresa img {
     width: 100%;
