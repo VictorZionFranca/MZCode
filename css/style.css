@@ -205,14 +205,14 @@ header {
 }
 .card .img-box {
     position: absolute;
-    width: 250px;
+    width: 290px;
     height: auto;
     top: 0px;
     transition: 0.5s;
 }
 .card:hover .img-box {
-    top: -100px;
-    scale: 0.75;
+    top: -115px;
+    scale: 0.80;
 }
 .card .img-box img {
     width: 100%;
@@ -338,6 +338,73 @@ header {
 .footer-empresa a:hover {
     color: rgb(4,233,223);
     transition: 0.4s;
+}
+#instagram {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+#youtube {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+#linkedin {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+.footer-socials span {
+    position: absolute;
+    pointer-events: none;
+}
+.insta {
+    top: 120px;
+    left: 65px;
+    font-size: 0px;
+    overflow: hidden; 
+    height: 0;
+    transition: 0.3s;
+    transform: rotate(90deg);
+}
+.youtube {
+    top: 120px;
+    left: 158px;
+    font-size: 0px;
+    overflow: hidden;  
+    height: 0;
+    transition: 0.3s;
+    transform: rotate(90deg);
+}
+.linkedin {
+    top: 120px;
+    left: 245px;
+    font-size: 0px;
+    overflow: hidden;
+    height: 0;
+    transition: 0.3s;
+    transform: rotate(90deg);
+}
+#instagram:hover .insta {
+    top: 145px;
+    left: 30px;
+    height: 30px;
+    font-size: 18px;
+    transform: rotate(0deg);
+}
+#youtube:hover .youtube {
+    top: 145px;
+    left: 130px;
+    height: 30px;
+    font-size: 18px;
+    transform: rotate(0deg);
+}
+#linkedin:hover .linkedin {
+    top: 145px;
+    left: 220px;
+    height: 30px;
+    font-size: 18px;
+    transform: rotate(0deg);
 }
 .footer-copyright {
     width: 100%;

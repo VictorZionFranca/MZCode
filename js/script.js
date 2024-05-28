@@ -19,7 +19,7 @@ elements.forEach( (element) => myObserver.observe(element) )
 const menu = document.querySelector('.menu-static')
 
 function activeScroll(){
-    menu.classList.toggle('menu-static-ativo', scrollY > 130)
+    menu.classList.toggle('menu-static-ativo', scrollY > 155)
 }
 
 window.addEventListener('scroll', activeScroll)
