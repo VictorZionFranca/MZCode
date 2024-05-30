@@ -171,7 +171,7 @@ header {
     text-align: center;
     display: flex;
     flex-direction: column;
-    width: 1200px;
+    width: 85%;
     height: 210px;
     border-radius: 0px 90px 90px 0px;
     background: #b7b8b87d;
@@ -317,7 +317,6 @@ header {
     margin-left: 50px;
     padding-left: 20px;
 }
-/* .footer-empresa {} */
 .footer-empresa, .footer-produtos p {
     font-size: 30px;
     color: rgb(4,233,223);
