@@ -129,17 +129,18 @@
     .frases {
         width: 90%;
         margin-top: 195px;
+        align-items: center;
     }
     .frases h1 {
-        font-size: 25px;
-        left: -20px;
+        font-size: 20px;
+        width: 235px;
         position: relative;
     }
     .frases p {
-        font-size: 20px;
+        font-size: 16px;
         margin: 10px 0 0 0;
         position: relative;
-        left: -20px;
+        width: 245px;
     }
     .frases-empresa h3{
         width: 100%;
@@ -152,7 +153,14 @@
         left: 0;
     }
     .card {
-        width: 80%;
+        width: 240px
+    }
+    .card .img-box {
+        width: 235px;
+    }
+    .card:hover .img-box {
+        top: -100px;
+        scale: 0.80;
     }
     .card .content {
         font-size: 16px;
@@ -182,6 +190,15 @@
     }
     .footer-links {
         width: 100%;
+    }
+    #instagram:hover .insta {
+        display: none;
+    }
+    #youtube:hover .youtube {
+        display: none;
+    }
+    #linkedin:hover .linkedin {
+        display: none;
     }
     .footer-copyright p {
         margin: 0;
