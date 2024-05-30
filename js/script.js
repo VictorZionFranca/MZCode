@@ -36,3 +36,10 @@ function backTop() {
         behavior: 'smooth'
     })
 }
+
+// Código para menu do celular
+
+const hamburguer = document.querySelector(".hamburguer");
+const nav = document.querySelector(".menu");
+
+hamburguer.addEventListener("click", () => nav.classList.toggle("ativo"));

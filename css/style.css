@@ -38,6 +38,9 @@ header {
 #logo {
     height: 85px;
 }
+.hamburguer {
+    visibility: hidden;
+}
 .menu {
     display: flex;
     align-items: center;
