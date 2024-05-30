@@ -1,0 +1,85 @@
+/* Começo Media Layout */
+
+@media (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+    .logo {
+        margin: auto;
+    }
+    .fundo h1 {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 35px;
+    }
+    .icones {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .icones i {
+        width: 100%;
+        font-size: 20px;
+    }
+    .primeiro_icone {
+        width: 200px;
+        margin: auto;
+        height: 100%;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .primeiro_icone p {
+        width: 100%;
+        height: 100%;
+    }
+    .frases {
+        width: 90%;
+        margin-top: 195px;
+    }
+    .frases h1 {
+        font-size: 25px;
+        left: -20px;
+        position: relative;
+    }
+    .frases p {
+        font-size: 20px;
+        margin: 10px 0 0 0;
+        position: relative;
+        left: -20px;
+    }
+    .frases-empresa h3{
+        width: 100%;
+        font-size: 20px;
+        left: 0;
+    }
+    .frases-empresa p {
+        width: 100%;
+        font-size: 20px;
+        left: 0;
+    }
+    .footer-socials i {
+        font-size: 15px;
+    }
+    .footer-logo {
+        width: 100px;
+    }
+    .footer-logo img {
+        width: 100%;
+    }
+    .footer-fundo {
+        width: 100%;
+    }
+    .footer-links {
+        width: 100%;
+    }
+    .footer-copyright p {
+        margin: 0;
+        text-align: center;
+        padding-top: 28px;
+        color: white;
+        font-size: 10px;
+    }
+}
+
+/* Fim Media Layout */
