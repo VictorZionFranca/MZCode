@@ -95,11 +95,13 @@ li .nav-item {
 @media (max-width: 992px) {
     .navbar-collapse {
         background: rgba(5, 74, 72, .95);
-        padding: 20px;
     }
 
     .navbar-nav {
         padding-left: 0px !important;
+    }
+    .nav-link {
+        padding: 30px !important;
     }
 
     .nav-item p {
