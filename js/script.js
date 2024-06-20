@@ -19,7 +19,7 @@ elements.forEach( (element) => myObserver.observe(element) )
 const menu = document.querySelector('.menu-static')
 
 function activeScroll(){
-    menu.classList.toggle('menu-static-ativo', scrollY > 155)
+    menu.classList.toggle('menu-static-ativo', scrollY > 150)
 }
 
 window.addEventListener('scroll', activeScroll)
@@ -36,10 +36,3 @@ function backTop() {
         behavior: 'smooth'
     })
 }
-
-// Código para menu do celular
-
-const hamburguer = document.querySelector(".hamburguer");
-const nav = document.querySelector(".menu");
-
-hamburguer.addEventListener("click", () => nav.classList.toggle("ativo"));

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
 
-html, body {
+html,
+body {
     font-family: Teachers;
     margin: 0;
     padding: 0;
@@ -15,57 +16,115 @@ header {
     display: flex;
     justify-content: space-between;
 }
+
 .menu-static {
-    background:transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background: transparent;
     position: fixed;
     width: 100%;
-    height: 80px;
+    height: 100px;
     z-index: 4;
     transition: all ease .8s;
 }
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 0 !important;
+    top: -20px;
+}
+
+li .nav-item {
+    color: white;
+}
+
+.nav-item p {
+    color: white;
+    font-size: 22px;
+    transition: 0.4s;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+        gap: 40px;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: space-evenly;
+    }
+}
+
 .menu-static-ativo {
     transition: all ease .8s;
-    background: rgba(5,74,72,.95) ;
+    background: rgba(5, 74, 72, .95);
     z-index: 4;
     backdrop-filter: blur(2px);
 }
+
 .logo {
     margin: 0 0 0 60px;
 }
+
 #logo {
     height: 85px;
 }
-.hamburguer {
-    visibility: hidden;
+
+.navbar-nav {
+    padding-left: 110px !important;
 }
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        background: rgba(5, 74, 72, .95);
+        padding: 20px;
+    }
+    .navbar-nav {
+        padding-left: 0px !important;
+    }
+    .nav-item p {
+        color: white;
+        font-size: 22px;
+        transition: 0.4s;
+        text-align: center;
+    }
+}
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
 .menu {
     display: flex;
     align-items: center;
     position: relative;
     right: 370px;
 }
+
 .menu ul {
     display: flex;
     text-decoration: none;
 }
+
 .menu ul li {
     padding-right: 42px;
     list-style-type: none;
     text-decoration: none;
 }
+
 .menu ul li a {
     text-decoration: none;
     color: white;
     font-size: 20px;
 }
-.menu-static a:hover {
-    color: rgba(5,74,72,1);
+
+.menu-static .nav-item p:hover {
+    color: rgb(4, 233, 223);
 }
 
-.menu-static-ativo a:hover {
+.menu-static-ativo .nav-item p:hover {
     color: rgba(0, 0, 0, .8);
 }
 
@@ -81,8 +140,9 @@ header {
     filter: brightness(0.25);
     position: relative;
     bottom: 80px;
-    box-shadow: 0px 25px 60px 10px rgba(0,0,0,0.75);
+    box-shadow: 0px 25px 60px 10px rgba(0, 0, 0, 0.75);
 }
+
 .fundo h1 {
     position: relative;
     bottom: 597px;
@@ -94,6 +154,7 @@ header {
     font-size: 47px;
     letter-spacing: -1px;
 }
+
 .fundo a {
     display: block;
     font-size: 40px;
@@ -111,20 +172,23 @@ header {
     border-color: rgba(5, 74, 72, 1);
     border: rgba(5, 74, 72, 1) 1px solid;
     transition: .6s ease-in;
-    
+
 }
+
 .fundo a:hover {
     background: transparent;
     color: rgba(5, 74, 72, 1);
     transition: .3s ease-out;
-    box-shadow: 0px 0px 35px 10px rgba(0,0,0,0.8);
+    box-shadow: 0px 0px 35px 10px rgba(0, 0, 0, 0.8);
 }
-.icones{ 
+
+.icones {
     width: 100%;
     height: 500px;
     display: flex;
     justify-content: center;
 }
+
 .primeiro_icone {
     width: 380px;
     background: linear-gradient(90deg, rgba(5, 74, 72, 1) 23%, rgba(5, 74, 72, 1) 47%, rgba(5, 74, 72, 1) 75%);
@@ -135,18 +199,21 @@ header {
     margin-left: 30px;
     color: #fffffff2;
     padding: 15px;
-    height: 285px;
+    height: 380px;
     border-radius: 50px;
     font-size: 22px;
     box-shadow: 0px 0px 15px 0px rgba(5, 74, 72, 1);
     transition: 1s;
 }
+
 .primeiro_icone span {
     font-weight: bolder;
 }
+
 .primeiro_icone i {
     font-size: 60px;
 }
+
 /* Começo transições */
 
 .hidden {
@@ -155,15 +222,18 @@ header {
     transition: all 0s;
     transform: translateX(-100%);
 }
+
 .show {
     opacity: 1;
     filter: blur(0);
     transition: all 1s;
     transform: translateX(0);
 }
+
 .icones :nth-child(2) {
     transition-delay: 1s;
 }
+
 .icones :nth-child(3) {
     transition-delay: 1.6s;
 }
@@ -178,68 +248,82 @@ header {
     height: 210px;
     border-radius: 0px 90px 90px 0px;
     background: #b7b8b87d;
+    padding: 32px;
 }
+
 .frases h1 {
     font-size: 40px;
     font-weight: 500;
 }
+
 .frases p {
- font-size: 23px;
+    font-size: 23px;
 }
+
 .saiba-mais {
     position: relative;
     display: flex;
     justify-content: center;
     margin: 120px;
 }
+
 .card {
-    display: flex;
+    display: flex !important;
     justify-content: center;
     width: 500px;
-    height: 300px;
-    position: absolute;
-    background-color: #b7b8b87d;
-    border-radius: 20px;
+    height: 300px !important;
+    position: absolute !important;
+    background-color: #b7b8b87d !important;
+    border-radius: 20px !important;
     box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
-    transition: 0.5s;
+    transition: 0.5s !important;
+    align-items: center;
+    border: none !important;
 }
+
 .card:hover {
-    height: 400px;
+    height: 400px !important;
 }
+
 .card .img-box {
     position: absolute;
     width: 290px;
     height: auto;
     top: 0px;
-    transition: 0.5s;
+    transition: 0.5s !important;
 }
+
 .card:hover .img-box {
     top: -115px;
     scale: 0.80;
 }
+
 .card .img-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .card .content {
     display: flex;
     flex-direction: column;
     gap: 18px;
     position: relative;
-    top: 175px;
+    top: 50px;
     width: 100%;
     padding: 0px 18px;
     text-align: center;
-    height: 100px;
+    height: 58px;
     overflow: hidden;
     font-size: 20px;
-    transition: 0.5s;
+    transition: 0.5s !important;
 }
+
 .card:hover .content {
     top: 35px;
     height: 390px;
 }
+
 .card .read-more {
     background-color: rgba(5, 74, 72, 1);
     padding: 12px;
@@ -249,18 +333,22 @@ header {
     border: 1px solid rgba(5, 74, 72, 1);
     transition: 0.5s;
 }
+
 .card .read-more:hover {
     background-color: transparent;
     color: rgba(5, 74, 72, 1);
 }
+
 .frases-empresa {
     height: 600px;
     margin-top: 530px;
 }
+
 .frases-empresa img {
     width: 100%;
     height: 500px;
 }
+
 .frases-empresa h3 {
     position: relative;
     top: -450px;
@@ -268,6 +356,7 @@ header {
     text-align: center;
     font-size: 32px;
 }
+
 .frases-empresa p {
     position: relative;
     top: -432px;
@@ -287,6 +376,7 @@ header {
     margin-top: 50px;
     display: flex;
 }
+
 .footer-logo {
     display: flex;
     height: 100px;
@@ -295,19 +385,23 @@ header {
     position: relative;
     flex-direction: column;
 }
+
 .footer-socials {
     display: flex;
     justify-content: space-evenly;
 }
+
 .footer-socials a {
     color: white;
     font-size: 35px;
     transition: 0.4s;
 }
+
 .footer-socials a:hover {
-    color: rgb(4,233,223);
+    color: rgb(4, 233, 223);
     transition: 0.4s;
 }
+
 .footer-links {
     border-left: 1px solid rgb(0, 50, 48);
     padding: 0 0 0 20px;
@@ -315,69 +409,83 @@ header {
     margin-top: 30px;
     display: flex;
 }
+
 .footer-bordas {
     border-left: 1px solid rgb(0, 50, 48);
     margin-left: 50px;
     padding-left: 20px;
 }
-.footer-empresa, .footer-produtos p {
+
+.footer-empresa,
+.footer-produtos p {
     font-size: 30px;
-    color: rgb(4,233,223);
+    color: rgb(4, 233, 223);
 }
+
 .footer-empresa ul {
     list-style: none;
     padding: 0;
 }
+
 .footer-empresa li {
     padding-bottom: 10px;
 }
+
 .footer-empresa a {
     font-size: 20px;
     color: white;
     text-decoration: none;
     transition: 0.4s;
 }
+
 .footer-empresa a:hover {
-    color: rgb(4,233,223);
+    color: rgb(4, 233, 223);
     transition: 0.4s;
 }
+
 #instagram {
     display: flex;
     flex-direction: column;
     text-decoration: none;
 }
+
 #youtube {
     display: flex;
     flex-direction: column;
     text-decoration: none;
 }
+
 #linkedin {
     display: flex;
     flex-direction: column;
     text-decoration: none;
 }
+
 .footer-socials span {
     position: absolute;
     pointer-events: none;
 }
+
 .insta {
     top: 120px;
     left: 65px;
     font-size: 0px;
-    overflow: hidden; 
+    overflow: hidden;
     height: 0;
     transition: 0.3s;
     transform: rotate(90deg);
 }
+
 .youtube {
     top: 120px;
     left: 158px;
     font-size: 0px;
-    overflow: hidden;  
+    overflow: hidden;
     height: 0;
     transition: 0.3s;
     transform: rotate(90deg);
 }
+
 .linkedin {
     top: 120px;
     left: 245px;
@@ -387,6 +495,7 @@ header {
     transition: 0.3s;
     transform: rotate(90deg);
 }
+
 #instagram:hover .insta {
     top: 145px;
     left: 30px;
@@ -394,6 +503,7 @@ header {
     font-size: 18px;
     transform: rotate(0deg);
 }
+
 #youtube:hover .youtube {
     top: 145px;
     left: 130px;
@@ -401,6 +511,7 @@ header {
     font-size: 18px;
     transform: rotate(0deg);
 }
+
 #linkedin:hover .linkedin {
     top: 145px;
     left: 220px;
@@ -408,6 +519,7 @@ header {
     font-size: 18px;
     transform: rotate(0deg);
 }
+
 .scrollTop {
     outline: none;
     border: 0;
@@ -428,15 +540,18 @@ header {
     visibility: hidden;
     transition: all .3s ease-in;
 }
+
 .scrollTop.active {
     opacity: 1;
     visibility: visible;
 }
+
 .scrollTop i {
     font-size: 40px;
     color: rgb(0, 0, 0);
     z-index: 110;
 }
+
 .footer-copyright {
     width: 100%;
     height: 75px;
@@ -444,6 +559,7 @@ header {
     margin: 0;
     box-shadow: 0px -10px 30px 2px #003230bf;
 }
+
 .footer-copyright p {
     margin: 0;
     text-align: center;
