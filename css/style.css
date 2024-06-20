@@ -55,12 +55,17 @@ li .nav-item {
         justify-content: space-evenly;
     }
 }
-[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
     cursor: pointer;
-    top: -10px;
+    top: 8px;
     right: 30px;
     position: relative;
 }
+
 .nav-item p {
     margin: 0;
 }
@@ -78,12 +83,13 @@ li .nav-item {
 
 .navbar-brand img {
     position: relative;
-    top: -12px;
+    top: -8px;
 }
 
 .navbar-nav {
     padding-left: 110px !important;
 }
+
 .navbar-collapse {
     flex-basis: 100%;
     flex-grow: 1;
@@ -95,11 +101,13 @@ li .nav-item {
 @media (max-width: 992px) {
     .navbar-collapse {
         background: rgba(5, 74, 72, .95);
+        top: 15px;
     }
 
     .navbar-nav {
         padding-left: 0px !important;
     }
+
     .nav-link {
         padding: 30px !important;
     }
@@ -110,6 +118,11 @@ li .nav-item {
         transition: 0.4s;
         text-align: center;
     }
+    .navbar-brand img {
+        width: 200px;
+        top: 15px;
+    }
+
 }
 
 .navbar>.container,
@@ -575,6 +588,9 @@ li .nav-item {
 .scrollTop.active {
     opacity: 1;
     visibility: visible;
+    position: fixed;
+    top: 92vh;
+    transition: .5s;
 }
 
 .scrollTop i {
