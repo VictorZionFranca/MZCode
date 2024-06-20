@@ -127,7 +127,7 @@
         transition-delay: .3s;
     }
     .frases {
-        width: 90%;
+        width: 100%;
         margin-top: 195px;
         align-items: center;
     }
@@ -140,7 +140,7 @@
         font-size: 16px;
         margin: 10px 0 0 0;
         position: relative;
-        width: 245px;
+        width: 400px;
     }
     .frases-empresa h3{
         width: 100%;
@@ -153,7 +153,7 @@
         left: 0;
     }
     .card {
-        width: 240px
+        width: 280px
     }
     .card .img-box {
         width: 235px;
@@ -164,7 +164,7 @@
     }
     .card .content {
         font-size: 16px;
-        height: 80px;
+        height: 25px;
     }
     .card .content h1 {
         font-size: 20px;
