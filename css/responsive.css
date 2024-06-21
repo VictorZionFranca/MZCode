@@ -1,6 +1,6 @@
 /* Começo Media Layout */
 
-@media (max-width: 600px) {
+@media (max-width: 992px) {
     .menu {
         max-width: 1280px;
         height: 70px;
@@ -8,60 +8,27 @@
         right: 10px;
         align-items: center;
     }
+
     .menu ul li {
         padding-right: 80px;
     }
+
     .menu ul li a {
         font-size: 30px;
         opacity: 0;
     }
+
     .logo {
         margin: auto;
     }
-    .hamburguer {
-        visibility: visible;
-        border: none;
-        background: none;
-        border-top: 3px solid #fff;
-        cursor: pointer;
-        padding: 0;
-        position: relative;
-        right: -20%;
-        z-index: 1;
-    }
-    .hamburguer::before,
-    .hamburguer::after {
-        content: " ";
-        display: block;
-        width: 35px;
-        height: 3px;
-        background: #fff;
-        margin-top: 5px;
-        padding: 0; 
-        position:relative;
-        transition: .6s;
-    }
-    .menu.ativo .nav-list a {
-        opacity: 1;
-    }
-    .menu.ativo .hamburguer {
-        right: -20%;
-        border-top-color: transparent;
-    }
-    .menu.ativo .hamburguer::before {
-        transform: rotate(135deg);
-    }
-    .menu.ativo .hamburguer::after {
-        transform: rotate(-135deg);
-        top: -7px;
-    }
+
     .nav-list {
         position: fixed;
         top: 0;
         left: 0;
         width: 100vw;
         height: 100vh;
-        background: rgba(5,74,72,1);
+        background: rgba(5, 74, 72, 1);
         margin: 0;
         flex-direction: column;
         clip-path: circle(100px at 90% -21%);
@@ -72,103 +39,134 @@
         gap: 0;
         pointer-events: none;
     }
+
     .nav-list li:nth-child(1) a {
         transition: 0.5s 0.2s;
     }
+
     .nav-list li:nth-child(2) a {
         transition: 0.5s 0.4s;
     }
+
     .nav-list li:nth-child(3) a {
-        transition: 0.5s 0.6s;   
+        transition: 0.5s 0.6s;
     }
+
     .menu.ativo .nav-list {
         clip-path: circle(1500px at 90% -21%);
         pointer-events: all;
     }
+
     .nav-list a {
         padding-block: 16px;
     }
+
     .fundo h1 {
         width: 90%;
         margin: 0 auto;
         font-size: 35px;
     }
+
     .icones {
         display: flex;
         flex-direction: column;
         width: 100%;
         height: 100%;
     }
+
     .icones i {
         width: 100%;
         font-size: 20px;
     }
+
     .primeiro_icone {
-        width: 200px;
+        width: 350px;
         margin: auto;
         height: 100%;
         font-size: 16px;
         margin-bottom: 20px;
     }
+
     .primeiro_icone p {
         width: 100%;
         height: 100%;
     }
+
     .show {
         opacity: 1;
         filter: blur(0);
         transition: all 1s;
         transform: translateX(0);
     }
+
     .icones :nth-child(2) {
         transition-delay: .2s;
     }
+
     .icones :nth-child(3) {
         transition-delay: .3s;
     }
+
     .frases {
         width: 100%;
-        margin-top: 195px;
+        margin-top: 100px;
         align-items: center;
     }
+
     .frases h1 {
         font-size: 20px;
         width: 235px;
         position: relative;
     }
+
     .frases p {
         font-size: 16px;
         margin: 10px 0 0 0;
         position: relative;
         width: 400px;
     }
-    .frases-empresa h3{
-        width: 100%;
+    .frases-empresa img {
+        display: none;
+    }
+    .frases-empresa h3 {
+        width: 90% !important;
         font-size: 20px;
-        left: 0;
+        margin: auto;
+        padding-top: 500px;
     }
     .frases-empresa p {
-        width: 100%;
+        width: 90%;
         font-size: 20px;
-        left: 0;
+        left: 26px;
+    }
+    .frases-empresa {
+        background: #b7b8b87d;
+        height: 325px;
+        margin-top: 530px;
+        border-radius: 30px;
     }
     .card {
         width: 280px
     }
+
     .card .img-box {
         width: 235px;
     }
+
     .card:hover .img-box {
         top: -100px;
         scale: 0.80;
     }
+
     .card .content {
         font-size: 16px;
         height: 25px;
     }
+
     .card .content h1 {
         font-size: 20px;
     }
+
     .footer-socials {
         display: flex;
         flex-direction: column;
@@ -176,30 +174,39 @@
         gap: 15px;
         margin-top: 20px;
     }
+
     .footer-socials i {
         font-size: 20px;
     }
+
     .footer-logo {
         width: 100px;
     }
+
     .footer-logo img {
         width: 100%;
     }
+
     .footer-fundo {
         width: 100%;
     }
+
     .footer-links {
         width: 100%;
     }
+
     #instagram:hover .insta {
         display: none;
     }
+
     #youtube:hover .youtube {
         display: none;
     }
+
     #linkedin:hover .linkedin {
         display: none;
     }
+
     .footer-copyright p {
         margin: 0;
         text-align: center;
