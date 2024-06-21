@@ -495,7 +495,7 @@ button:not(:disabled) {
     align-content: center;
     border-left: 1px solid rgb(0, 50, 48);
 }
-.informacoes h3, p, i {
+.informacoes h3,.informacoes p,.informacoes i {
     color: white;
 }
 .informacoes i {
