@@ -452,21 +452,22 @@ button:not(:disabled) {
     height: 255px;
     margin-top: 30px;
     display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .footer-bordas {
-    border-left: 1px solid rgb(0, 50, 48);
     margin-left: 50px;
     padding-left: 20px;
 }
 
-.footer-empresa,
+.footer-empresa p,
 .footer-produtos p {
     font-size: 30px;
     color: rgb(4, 233, 223);
 }
 
-.footer-empresa ul {
+.footer-empresa ul, .footer-produtos ul {
     list-style: none;
     padding: 0;
 }
@@ -475,16 +476,31 @@ button:not(:disabled) {
     padding-bottom: 10px;
 }
 
-.footer-empresa a {
+.footer-empresa a,.footer-produtos a {
     font-size: 20px;
     color: white;
     text-decoration: none;
     transition: 0.4s;
+    line-height: 1px;
 }
 
-.footer-empresa a:hover {
+.footer-empresa a:hover, .footer-produtos a:hover {
     color: rgb(4, 233, 223);
     transition: 0.4s;
+}
+.informacoes {
+    width: 300px;
+    padding: 0 20px;
+    text-align: center;
+    align-content: center;
+    border-left: 1px solid rgb(0, 50, 48);
+}
+.informacoes h3, p, i {
+    color: white;
+}
+.informacoes i {
+    font-size: 40px;
+    padding-bottom: 15px;
 }
 
 #instagram {
