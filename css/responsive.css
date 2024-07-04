@@ -198,14 +198,13 @@
 
     .footer-fundo {
         width: 100%;
-        height: 530px;
+        height: 300px;
     }
 
     .footer-links {
         width: 100%;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         padding: 0;
         border: none;
     }
@@ -223,6 +222,7 @@
         padding-top: 28px;
         padding-right: 60px;
         border: none;
+        display: none;
     }
 
     #instagram:hover .insta {
