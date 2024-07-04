@@ -132,8 +132,8 @@
         margin-top: 530px;
         border-radius: 30px;
         position: relative;
+        margin-bottom: 80px;
     }
-
     .frases-empresa img {
         display: none;
     }
@@ -208,7 +208,6 @@
         align-items: center;
         padding: 0;
         border: none;
-        margin-top: 60px;
     }
 
     .footer-empresa {
