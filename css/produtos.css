@@ -35,6 +35,7 @@ html, body {
 @media (max-width: 1400px) {
     .quadrado {
         flex-direction: column;
+        background: rgba(255, 255, 255, 1);
     }
     .container img {
         width: 300px !important;
