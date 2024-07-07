@@ -28,7 +28,7 @@ window.addEventListener('scroll', activeScroll)
 
 window.addEventListener('scroll', function() {
     let scroll = document.querySelector('.scrollTop')
-        scroll.classList.toggle('active', window.scrollY > 600)
+        scroll.classList.toggle('active', window.scrollY > 400)
 })
 function backTop() {
     window.scrollTo({
