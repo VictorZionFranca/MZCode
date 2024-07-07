@@ -22,7 +22,7 @@ html, body {
     display: flex;
     border: 3px inset  rgb(120, 120, 120);
     border-radius: 30px;
-    background: rgba(255, 255, 255, .70);
+    background: rgba(255, 255, 255, .90);
     backdrop-filter: blur(100px);
 }
 .quadrado h2 {
