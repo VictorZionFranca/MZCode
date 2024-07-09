@@ -1,0 +1,93 @@
+/* Começo Header */
+
+.menu-static {
+    background: rgba(5, 74, 72, .95);
+}
+
+/* Fim Header */
+/* Começo Main */
+
+main {
+    margin-top: 50px;
+}
+
+main h1 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 450;
+}
+
+.caixa {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    background-color: rgb(229, 229, 229);
+    border-radius: 60px;
+    width: 600px;
+    padding: 50px;
+    margin: auto;
+}
+
+.primeiro {
+    display: flex;
+    gap: 30px;
+}
+
+input {
+    border-radius: 10px;
+    padding-left: 5px;
+    border: none;
+    border-bottom: 3px solid rgba(5, 74, 72, .95);
+    outline: 0;
+    transition: 0.5s;
+    background-color: rgb(229, 229, 229);
+}
+
+input:focus {
+    border: none;
+    border-bottom: 3px solid rgb(4, 233, 223);
+    transition: 0.5s;
+}
+
+.nome,
+.sobrenome {
+    display: flex;
+    flex-direction: column;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+}
+
+.mensagem {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    width: 420px;
+    border-radius: 5px;
+    border: 3px solid rgba(5, 74, 72, .95);
+    outline: none;
+    transition: .2s;
+    padding: 5px;
+    background-color: rgb(229, 229, 229);
+}
+
+textarea:focus {
+    border-color: rgb(4, 233, 223);
+    transition: 0;
+}
+
+.botao button {
+    width: 300px;
+    right: 0 !important;
+    top: 0 !important;
+}
+
+/* Fim Main */
