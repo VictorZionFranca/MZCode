@@ -31,6 +31,29 @@ main h1 {
     margin: auto;
 }
 
+@media (max-width: 600px) {
+    .caixa {
+        width: 300px;
+    }
+    
+    .primeiro {
+        flex-direction: column;
+        width: 230px;
+    }
+
+    .segundo .email {
+        width: 230px;
+    }
+
+    textarea {
+        width: 230px !important;
+    }
+
+    .botao button {
+        width: 200px !important;
+    }
+}
+
 .primeiro {
     display: flex;
     gap: 30px;
