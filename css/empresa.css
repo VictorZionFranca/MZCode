@@ -1,0 +1,51 @@
+/* Começo Header */
+
+.menu-static {
+    background: rgba(5, 74, 72, .95);
+}
+
+/* Fim Header */
+/* Começo Main */
+
+main {
+    background-color: rgb(224, 224, 224);
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+.caixa {
+    text-align: center;
+    background-color: rgb(224, 224, 224);
+    width: 750px;
+    margin: auto;
+    padding: 30px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    color: rgb(0, 50, 48);
+    padding-bottom: 20px;
+    font-weight: 400 !important;
+}
+main p, section p {
+    font-family: Teachers;
+    word-spacing: 4px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+section {
+    width: 750px;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+@media (max-width:800px) {
+    .caixa, section {
+        width: 300px;
+    }
+}
+
+/* Fim Main */
