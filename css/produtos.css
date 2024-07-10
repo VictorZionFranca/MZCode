@@ -46,4 +46,47 @@ html, body {
     border-radius: 30px;
 }
 
+@media (max-width: 500px) {
+    h1 {
+        font-size: 20px !important;
+    }
+}
+
+h1 {
+    color: white !important;
+    font-family: Teachers;
+    font-weight: 300 !important;
+    border-left: 2px solid rgb(207, 207, 207);
+    border-right: 2px solid rgb(207, 207, 207);
+    border-radius: 15px;
+    width: max-content;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+.molde {
+    background-color: rgb(207, 207, 207);
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    border-radius: 100px 15px 100px 15px ;
+}
+
+.accordion {
+    width: 800px;
+    background-color: rgb(207, 207, 207);
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+    top: 0px;
+    right: 5px;
+    position: relative;
+    border-radius: 20px !important;
+}
+.accordion-flush>.accordion-item {
+    border-radius: 20px !important;
+}
+
+
 /* Fim Main */
