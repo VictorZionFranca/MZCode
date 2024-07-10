@@ -14,7 +14,7 @@ html, body {
 /* Começo Main */
 
 main {
-    height: 1440px;
+    height: 1600px;
 }
 
 .container{
@@ -81,8 +81,7 @@ h1 {
     width: 800px;
     background-color: rgb(207, 207, 207);
 }
-
-[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+.accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed  {
     cursor: pointer;
     top: 0px;
     right: 5px;
@@ -112,6 +111,8 @@ h4 {
     background: rgba(5, 74, 72, .95);
     border-radius: 30px !important;
     transition: .4s;
+    top: 0;
+    right: 0;
 }
 
 .abaixo p {
@@ -132,6 +133,10 @@ h4 {
     transition: .4s;
 }
 
-
+@media (max-width: 500px) {
+    main {
+        height: 1900px;
+    }
+}
 
 /* Fim Main */
