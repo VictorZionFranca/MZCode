@@ -12,6 +12,11 @@ html, body {
 }
 /* Fim Header */
 /* Começo Main */
+
+main {
+    height: 1440px;
+}
+
 .container{
     z-index: 2;
     position: relative;
